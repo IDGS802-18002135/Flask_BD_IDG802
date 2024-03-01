@@ -17,7 +17,7 @@ class UserForm(Form):
                          )])
 
 class UserForm2(Form):
-    id=IntegerField('id')
+    id=IntegerField('')
     nombre=StringField("nombre",[validators.DataRequired(message='el campo es requerido'),
                                  validators.length(min=4,max=10,message='ingresa nombre valido')])
     
